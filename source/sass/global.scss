@@ -17,3 +17,12 @@ body {
 img {
   max-width: 100%
 }
+
+a {
+  color: $link-blue;
+  text-decoration: none;
+  &:hover {
+    color: $link-blue - #111;
+    text-decoration: underline;
+  }
+}

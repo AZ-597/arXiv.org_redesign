@@ -1,0 +1,40 @@
+.page-footer {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  background-color: $black;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.page-footer__copy {
+  margin: 0;
+  max-width: 70ch;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $grey-40;
+}
+
+.page-footer__link {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-left: auto;
+  color: $grey-20;
+  &:hover {
+    color: $grey-20 - #222;
+    text-decoration: none;
+  }
+  &:active {
+    color: $grey-20 - #444;
+    text-decoration: none;
+  }
+}
+
+.page-footer__social-link {
+  margin-left: 24px;
+  &:hover {
+    //
+  }
+}

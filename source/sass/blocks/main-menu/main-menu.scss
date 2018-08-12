@@ -1,0 +1,24 @@
+.main-menu {
+  @include reset-list;
+}
+
+.main-menu__item {
+  &+.main-menu__item {
+    margin-left: 24px;
+  }
+}
+
+.main-menu__link {
+  font-size: 20px;
+  line-height: 1.2;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white - #222;
+    text-decoration: none;
+  }
+  &:active {
+    color: white - #444;
+    text-decoration: none;
+  }
+}
