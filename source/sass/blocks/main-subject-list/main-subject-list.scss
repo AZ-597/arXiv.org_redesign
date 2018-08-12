@@ -3,3 +3,91 @@
   grid-row: 3 / 4;
   margin-bottom: 32px;
 }
+
+.main-subject-list__list {
+  @include reset-list;
+  flex-flow: column nowrap;
+}
+
+.main-subject-list__list-item {
+
+}
+
+.main-subject-list__list-item-heading {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/*----------------------------------------------------*/
+
+.main-subject-list__sublist {
+  @include reset-list;
+  flex-flow: column nowrap;
+  margin-left: 32px;
+}
+
+.main-subject-list__sublist-item {
+
+}
+
+.main-subject-list__sublist-item-heading {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/*----------------------------------------------------*/
+
+.main-subject-list__sublist-item-heading-bar {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+.main-subject-list__sublist-item-heading-tag {
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.main-subject-list__sublist-item-heading-btn {
+  font-size: 16px;
+  color: $brand-red;
+  text-decoration: none;
+  &:hover {
+    color: $brand-red + #222;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  &:active {
+    color: $brand-red - #222;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  & + .main-subject-list__sublist-item-heading-btn {
+    margin-left: 4px;
+  }
+}
+
+/*----------------------------------------------------*/
+
+.main-subject-list__sublist-item-includes {
+  @include reset-list;
+  flex-flow: row wrap;
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.main-subject-list__sublist-item-includes-start {
+  margin-right: 8px;
+}
+
+.main-subject-list__sublist-item-include-item {
+}
+.main-subject-list__sublist-item-include-item:not(:last-of-type)::after {
+  content: "|\00A0 "
+}

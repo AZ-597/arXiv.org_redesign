@@ -90,7 +90,7 @@
 
         <div class="main-subject-list">
 
-          <ul class="main-subject-list__list">
+          <!-- <ul class="main-subject-list__list">
 
             <li class="main-subject-list__list-item">
               <h3 class="main-subject-list__list-item-heading">Physics</h3>
@@ -106,17 +106,8 @@
                     </span>
                   </h4>
                   <ul class="main-subject-list__sublist-item-includes">
-                    <li class="main-subject-list__sublist-item-include-item">
-                      <a href="#">Hi! I'm Include</a>
-                    </li>
-                    <li class="main-subject-list__sublist-item-include-item">
-                      <a href="#">Hi! I'm Include</a>
-                    </li>
-                    <li class="main-subject-list__sublist-item-include-item">
-                      <a href="#">Hi! I'm Include</a>
-                    </li>
-                    <li class="main-subject-list__sublist-item-include-item">
-                      <a href="#">Hi! I'm Include</a>
+                    <li class="main-subject-list__sublist-item-includes-start">
+                      includes:&nbsp;
                     </li>
                     <li class="main-subject-list__sublist-item-include-item">
                       <a href="#">Hi! I'm Include</a>
@@ -126,30 +117,44 @@
               </ul>
             </li>
 
+          </ul> -->
+          <ul class="main-subject-list__list">
+            <!-- Subjects here -->
           </ul>
 
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dolore labore iste nemo nihil beatae recusandae
-            necessitatibus eum repellendus fugiat quidem corrupti corporis magnam ipsum minima molestias, quasi mollitia
-            alias? Dolores reiciendis, consequuntur consectetur, eius corrupti sunt quis ratione, laborum at ea esse! Dolorem
-            saepe, voluptates quos pariatur officia corrupti ipsa labore velit quisquam quae quasi distinctio temporibus
-            nesciunt nisi? Unde velit, eaque natus aspernatur ex praesentium autem cupiditate sed id. Veniam, ipsam dignissimos.
-            Pariatur quidem optio possimus cum veritatis quod repudiandae unde, labore assumenda! Ullam, cum. Laborum, dignissimos
-            deleniti. Consectetur, distinctio quia facere, odio provident neque possimus mollitia quas velit eius error vero!
-            Id facilis fugit hic sint dolorem eius voluptates? Doloribus distinctio expedita rem, consequuntur debitis fugiat
-            officiis. Velit aliquam repellat, deleniti soluta minima nam animi unde temporibus commodi quia corrupti aliquid
-            consequuntur similique voluptatum, ipsa laborum sint sit labore quis. Sapiente, iusto quos atque hic nam ea.
-            Quas labore quidem odio ea dolorum. Quaerat, animi dolor facilis nisi distinctio quasi incidunt repellat ullam
-            vitae? Repellendus possimus, praesentium eius explicabo rerum voluptas. Porro neque iusto explicabo fugit error?
-            Ipsum praesentium esse, accusamus earum commodi sint aperiam et officia fugiat optio quibusdam voluptatum minima
-            in corrupti, error delectus laborum labore minus? Officia, blanditiis. Excepturi recusandae distinctio possimus
-            expedita dolore? Quam, exercitationem deserunt! Saepe et sunt fugiat totam similique soluta tempore sapiente
-            magni dicta alias molestias, repudiandae numquam cum, earum dolorem? Eum modi est, quia saepe sequi excepturi
-            nesciunt ut! Quam temporibus iste fugit voluptatem dolorem accusamus ipsa maiores modi harum minima eveniet porro
-            quos eius explicabo dolores id error deserunt, itaque enim sit. Corrupti ab ratione iusto ullam voluptate. Deserunt,
-            nostrum officia aliquid provident dignissimos commodi dolorum reprehenderit accusamus itaque sequi, magni culpa,
-            autem accusantium odio? Aut repellat eum sapiente, iusto, vero iure rerum, maxime cum totam dignissimos perspiciatis?
-            Deleniti amet quia, ipsum incidunt beatae ea, earum doloribus ut molestias officiis non necessitatibus optio
-            quis molestiae voluptatum tenetur maxime mollitia fuga velit exercitationem fugiat. Non minima ad ex consectetur?</p>
+          <template id="subj-template">
+            <li class="main-subject-list__list-item">
+              <h3 class="main-subject-list__list-item-heading">Physics</h3>
+              <ul class="main-subject-list__sublist">
+                <!--  -->
+              </ul>
+            </li>
+          </template>
+
+          <template id="sub-subj-template">
+            <li class="main-subject-list__sublist-item">
+              <h4 class="main-subject-list__sublist-item-heading">
+                <a href="#">Astrophysics</a>
+                <span class="main-subject-list__sublist-item-heading-bar">
+                  <span class="main-subject-list__sublist-item-heading-tag">[astro-ph]</span>
+                  <a href="#" class="main-subject-list__sublist-item-heading-btn">new</a>,
+                  <a href="#" class="main-subject-list__sublist-item-heading-btn">recent</a>,
+                  <a href="#" class="main-subject-list__sublist-item-heading-btn">search</a>
+                </span>
+              </h4>
+              <ul class="main-subject-list__sublist-item-includes">
+                <!--  -->
+              </ul>
+            </li>
+          </template>
+
+          <template id="include-template">
+            <li class="main-subject-list__sublist-item-include-item">
+              <a href="#">Hi! I'm Include</a>
+            </li>
+          </template>
+
+
         </div>
       </div>
     </main>
@@ -170,6 +175,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/big-list.js"></script>
+  <script src="js/template.js"></script>
 </body>
 
 </html>
