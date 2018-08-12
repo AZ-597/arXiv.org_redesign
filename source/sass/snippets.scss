@@ -1,0 +1,40 @@
+label[for],
+button,
+input,
+select {
+  cursor: pointer;
+}
+
+img:not([alt]),
+img[alt=""] {
+  outline: 5px solid red;
+}
+
+abbr[title],
+acronym[title],
+dfn {
+  cursor: help;
+}
+/*
+body>* {
+  outline: 1px dashed red;
+  &>* {
+    outline: 1px dashed crimson;
+    &>* {
+      outline: 1px dashed blueviolet;
+      &>* {
+        outline: 1px dashed blue;
+        &>* {
+          outline: 1px dashed lawngreen;
+          &>* {
+            outline: 1px dashed green;
+            &>* {
+              outline: 1px dashed goldenrod;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ */
