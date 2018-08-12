@@ -1,0 +1,41 @@
+.btn {
+  display: inline-flex;
+  height: 32px;
+  margin: 0;
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  background-color: $brand-red;
+  border: none;
+  border-radius: none;
+  &:hover {
+    color: white;
+    background-color: $brand-red + #111;
+    text-decoration: none;
+  }
+  &:active {
+    color: white;
+    background-color: $brand-red - #111;
+    text-decoration: none;
+  }
+}
+
+.btn--secondary {
+  padding: 0;
+  color: $brand-red;
+  background-color: transparent;
+  &+.btn--secondary {
+    margin-left: 24px;
+  }
+  &:hover {
+    color: $brand-red + #222;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  &:active {
+    color: $brand-red - #222;
+    background-color: transparent;
+    text-decoration: none;
+  }
+}
