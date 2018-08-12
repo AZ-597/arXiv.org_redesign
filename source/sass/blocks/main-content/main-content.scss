@@ -4,7 +4,7 @@
 
 .main-content__wrapper {
   display: grid;
-  grid-template: auto auto / repeat(12, 1fr);
+  grid-template: auto auto auto / repeat(12, 1fr);
   grid-row-gap: 24px;
   grid-column-gap: 16px;
 }
