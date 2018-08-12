@@ -1,0 +1,23 @@
+.gratitude-board {
+  margin-top: 32px;
+  padding: 16px;
+  background-color: #1B1464;
+  grid-column: 10 / 13;
+  grid-row: 1 / 2;
+  align-self: start;
+}
+
+.gratitude-board__copy {
+  margin-top: 100px; // logo
+  display: flex;
+  font-size: 14px;
+  color: white;
+  &:hover {
+    color: white - #222;
+    text-decoration: none;
+  }
+  &:active {
+    color: white - #444;
+    text-decoration: none;
+  }
+}

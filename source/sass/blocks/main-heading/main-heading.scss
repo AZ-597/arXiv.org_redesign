@@ -1,0 +1,22 @@
+.main-heading {
+  grid-column: 1 / 9;
+  grid-row: 1 / 2;
+}
+
+.main-heading__lead {
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: $black;
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.main-heading__meta {
+  margin: 0;
+  margin-bottom: 16px;
+  color: $grey-50;
+  font-size: 14px;
+  line-height: 1;
+}
